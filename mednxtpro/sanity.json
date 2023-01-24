@@ -1,0 +1,33 @@
+{
+    "root": true,
+    "project": {
+      "name": "mednxtpro"
+    },
+    "api": {
+      "projectId": "oz576r8f",
+      "dataset": "production"
+    },
+    "plugins": [
+      "@sanity/base",
+      "@sanity/components",
+      "@sanity/default-layout",
+      "@sanity/default-login",
+      "@sanity/desk-tool",
+      "@sanity/google-maps-input"
+    ],
+    "parts": [
+      {
+        "name": "part:@sanity/base/schema",
+        "path": "./schemas/schema.js"
+      }
+    ],
+    "env": {
+        "development": {
+          "api": {
+            "dataset": "staging"
+          }}},
+          "server": {
+            "hostname": "0.0.0.0",
+            "port": 3333
+          }
+  }
